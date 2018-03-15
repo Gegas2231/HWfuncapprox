@@ -1,4 +1,4 @@
-	
+
 
 module funcapp
 
@@ -36,12 +36,12 @@ module funcapp
 		plot(xnew,ynew,label="approx")
 		legend(loc="upper left")
 		# find maximal error
-		err = ynew - ytrue
+		err = ynew .- ytrue
 		# plot
 		subplot(122)
 		plot(1:n_new,err)
 		title("Cheby error")
-		return err
+		return Dict(:error=>maximum(abs,err))
 	end
 
 	function q2(n)

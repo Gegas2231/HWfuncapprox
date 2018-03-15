@@ -1,21 +1,27 @@
 # Function Approximation Homework
 
-[![Join the chat at https://gitter.im/ScPo-CompEcon/HW-funcapprox](https://badges.gitter.im/ScPo-CompEcon/HW-funcapprox.svg)](https://gitter.im/ScPo-CompEcon/HW-funcapprox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/ScPo-CompEcon/HWfuncapprox.svg?branch=master)](https://travis-ci.org/ScPo-CompEcon/HWfuncapprox)
 
 ## Solutions
 
-![question 1](https://github.com/ScPo-CompEcon/HW-funcapprox/tree/solution/question_1.png)  
+### Q1
 
-  
-![question 3](https://github.com/ScPo-CompEcon/HW-funcapprox/tree/solution/question_3.png)  
+![question 1](question_1.png)  
 
-![question 4a](https://github.com/ScPo-CompEcon/HW-funcapprox/tree/solution/question_4a.png)  
+### Q3
+
+![question 3](question_3.png)  
+
+### Q4
+
+![question 4a](question_4a.png)  
 
 
-![question 4b](https://github.com/ScPo-CompEcon/HW-funcapprox/tree/solution/question_4b.png)  
+![question 4b](question_4b.png)  
 
+### Q5
 
-![question 5](https://github.com/ScPo-CompEcon/HW-funcapprox/tree/solution/question_5.png)  
+![question 5](question_5.png)  
 
 
 ## Solutions Branch: How to get this branch
