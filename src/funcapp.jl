@@ -132,7 +132,7 @@ module funcapp
 		ax = axes[1]
 		ax[:plot](xnew,runge(xnew),color="black",lw=2,label="runge")
 		for j in 1:length(deg)
-			nodes = linspace(lb,ub,deg[j]+1)
+			nodes = collect(linspace(lb,ub,deg[j]+1))
 			C = ChebyType(nodes,deg[j],lb,ub,runge)
 			p = predict(C,xnew)
 			ax[:plot](xnew,p["preds"],label="deg=$(deg[j])",color=colors[j],lw=2)
@@ -185,7 +185,7 @@ module funcapp
 
 		# scaled knots
 		G(k,s) = GeneralizedPareto(k,s,0)
-		pf(k,s) = quantile(GeneralizedPareto(k,s,0),linspace(0.05,cdf(G(0.5,1),5),6))
+		pf(k,s) = quantile.(GeneralizedPareto(k,s,0),linspace(0.05,cdf(G(0.5,1),5),6))
 		myknots = vcat(-reverse(pf(0.5,1)),0.0,pf(0.5,1))
 
 		bs2 = BSpline(myknots,deg)
@@ -221,7 +221,7 @@ module funcapp
 
 	function q5()
 
-		f(x) = abs(x).^0.5
+		f(x) = abs.(x).^0.5
 		lb,ub = (-1.0,1.0)
 		nknots = 13
 		deg = 3
